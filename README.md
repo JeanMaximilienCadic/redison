@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="imgs/redis.png"/>
+  <img src="img/redis.png"/>
 </p>
 
 # Redison : Redis + Json : Shared objects in memory using redis and json files
