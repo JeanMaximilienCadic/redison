@@ -65,19 +65,19 @@ import numpy as np
 
 while True:
     # Create array2
-    array2 = np.random.rand(10)
+    array1 = np.random.rand(10)
     
     # Push array2 
-    RedisObject(id="proc2_data",
-                data=array2,
-                host="10.2.0.2")
+    RedisObject(id="array1",
+                data=array1,
+                host="10.1.0.2")
    
     # Pull array1
-    array1 = RedisObject(id="proc1_data", 
-                         host="10.1.0.2")
+    array2 = RedisObject(id="array2", 
+                         host="10.2.0.2")
    
     # Wait for array1 to be set on the remote machine 2
-    print(array1.get(blocking=True)) 
+    print(array2.get(blocking=True)) 
 ```
 Processus 2
 
@@ -90,12 +90,12 @@ while True:
     array2 = np.random.rand(10)
     
     # Push array2 
-    RedisObject(id="proc2_data",
+    RedisObject(id="array2",
                 data=array2,
                 host="10.2.0.2")
    
     # Pull array1
-    array1 = RedisObject(id="proc1_data", 
+    array1 = RedisObject(id="array1", 
                          host="10.1.0.2")
    
     # Wait for array1 to be set on the remote machine 1
