@@ -42,7 +42,7 @@ setuptools.setup(
     long_description="Redis with JSON to distribute objects in memory other distant machines.",
     long_description_content_type="text/markdown",
     url="https://github.com/JeanMaximilienCadic/redison",
-    python_requires='>=3.6',
+    python_requires='>=3',
     install_requires=get_requirements("requirements.txt"),
     packages=["resdison"],
     classifiers=[
