@@ -2,6 +2,15 @@ import setuptools
 import os
 from gnutools.utils import parent, listfiles
 import numpy as np
+import pathlib
+from redison import __version__
+from setuptools import setup
+
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
+
+# The text of the README file
+README = (HERE / "README.md").read_text()
 
 def get_requirements(txt_file):
     """
@@ -35,16 +44,16 @@ def get_packages(root):
 
 setuptools.setup(
     name="redison",
-    version="1.0a1",
+    version=__version__,
     author="Jean Maximilien Cadic",
     author_email="j.cadic@9dw-lab.com",
     description="Shared memory object with redis and json files.",
-    long_description="Redis with JSON to distribute objects in memory other distant machines.",
+    long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/JeanMaximilienCadic/redison",
     python_requires='>=3',
     install_requires=get_requirements("requirements.txt"),
-    packages=["resdison"],
+    packages=["redison"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

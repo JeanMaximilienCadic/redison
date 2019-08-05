@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="img/redis.png"/>
+  <img src="https://raw.githubusercontent.com/JeanMaximilienCadic/redison/master/img/redis.png"/>
 </p>
 
 # Redison : Redis + Json : Shared objects in memory using redis and json files

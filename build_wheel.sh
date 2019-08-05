@@ -2,8 +2,8 @@
 
 #Variables
 VERSION=$(python -W ignore -c "import redison; print(redison.__version__)")
-WHL_NAME="gnutools_python-$VERSION-py3-none-any.whl";
-WHL_NAME_NEW="gnutools_python-$VERSION-py36-none-any.whl";
+WHL_NAME="redison-$VERSION-py3-none-any.whl";
+WHL_NAME_NEW="redison-$VERSION-py36-none-any.whl";
 
 ##Build wheel
 COMMAND="rm dist/*.whl"; echo $COMMAND;  $COMMAND
