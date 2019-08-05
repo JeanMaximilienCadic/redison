@@ -3,3 +3,4 @@
 build
 *.whl
 build_wheel.sh
+*.pyc

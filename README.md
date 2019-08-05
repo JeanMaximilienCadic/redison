@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-## numpy
+## numpy (local)
 
 ```bash
 from redison import RedisObject
@@ -19,7 +19,7 @@ print(array.get())  # Retrieve the object from the redis database
 
 ```
 
-## multiproc
+## multiproc (local)
 Processus 1
 
 ```bash
@@ -56,7 +56,7 @@ while True:
 
 ```
 
-## multiproc remote
+## multiproc (remote)
 Processus 1
 
 ```bash

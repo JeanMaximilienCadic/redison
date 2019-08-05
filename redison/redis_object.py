@@ -1,7 +1,7 @@
 import redis
 import pickle
-from gnutools.utils import id_generator
 import time
+from gnutools.utils import id_generator
 
 class RedisObject:
     def __init__(self, data=None,id=None, host="127.0.0.1", port="6379", db=0):

@@ -4,7 +4,6 @@ from gnutools.utils import parent, listfiles
 import numpy as np
 import pathlib
 from redison import __version__
-from setuptools import setup
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
