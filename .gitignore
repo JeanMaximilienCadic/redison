@@ -2,3 +2,4 @@
 .*egg-ingo
 build
 *.whl
+build_wheel.sh
